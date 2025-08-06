@@ -70,9 +70,9 @@
 
 :root {
   --radius: 0.5rem;
-  --background: #080808;
+  --background: #000000;
   --foreground: #ffffff;
-  --card: #2a2a2a;
+  --card: #000000;
   --card-foreground: #ffffff;
   --popover: #2a2a2a;
   --popover-foreground: #ffffff;
@@ -80,7 +80,7 @@
   --primary-foreground: #ffffff;
   --secondary: #333333;
   --secondary-foreground: #ffffff;
-  --muted: #1f1f1f;
+  --muted: #000000;
   --muted-foreground: #a0a0a0;
   --accent: #003261;
   --accent-foreground: #ffffff;
@@ -125,9 +125,9 @@
 }
 
 .dark {
-  --background: #080808;
+  --background: #000000;
   --foreground: #ffffff;
-  --card: #2a2a2a;
+  --card: #000000;
   --card-foreground: #ffffff;
   --popover: #2a2a2a;
   --popover-foreground: #ffffff;
@@ -135,7 +135,7 @@
   --primary-foreground: #ffffff;
   --secondary: #333333;
   --secondary-foreground: #ffffff;
-  --muted: #1f1f1f;
+  --muted: #000000;
   --muted-foreground: #a0a0a0;
   --accent: #003261;
   --accent-foreground: #ffffff;
@@ -186,5 +186,20 @@
   body {
     @apply bg-background text-foreground;
     letter-spacing: var(--tracking-normal);
+    background-color: #000000 !important;
   }
+  html {
+    background-color: #000000 !important;
+  }
+}
+
+/* Force black background */
+html, body {
+  background-color: #000000 !important;
+  background: #000000 !important;
+}
+
+#__next {
+  background-color: #000000 !important;
+  background: #000000 !important;
 }
