@@ -260,7 +260,7 @@ export default function Home() {
               What Our Clients Say
             </h2>
             <p className="text-xl text-muted-foreground">
-              Don't just take our word for it - hear from our satisfied clients
+              Don&apos;t just take our word for it - hear from our satisfied clients
             </p>
           </div>
           
@@ -274,7 +274,7 @@ export default function Home() {
                     </svg>
                   ))}
                 </div>
-                <p className="text-muted-foreground mb-4">"{testimonial.content}"</p>
+                <p className="text-muted-foreground mb-4">&ldquo;{testimonial.content}&rdquo;</p>
                 <div>
                   <div className="font-semibold text-foreground">{testimonial.name}</div>
                   <div className="text-sm text-muted-foreground">{testimonial.role}</div>
@@ -292,7 +292,7 @@ export default function Home() {
             Ready to Transform Your Business?
           </h2>
           <p className="text-xl text-primary-foreground/80 mb-8">
-            Let's discuss how Bits can help you achieve your software development goals
+            Let&apos;s discuss how Bits can help you achieve your software development goals
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className="bg-primary-foreground text-primary px-8 py-3 rounded-lg font-semibold hover:bg-primary-foreground/90 transition-colors">

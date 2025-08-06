@@ -95,8 +95,8 @@ export default function Testimonials() {
               Client <span className="text-primary">Testimonials</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-              Don't just take our word for it - hear from our satisfied clients about their 
-              experience working with Bits and the results we've delivered.
+              Don&apos;t just take our word for it - hear from our satisfied clients about their 
+              experience working with Bits and the results we&apos;ve delivered.
             </p>
           </div>
         </div>
@@ -139,7 +139,7 @@ export default function Testimonials() {
                   ))}
                 </div>
                 
-                <p className="text-muted-foreground mb-4">"{testimonial.content}"</p>
+                <p className="text-muted-foreground mb-4">&ldquo;{testimonial.content}&rdquo;</p>
                 
                 <div className="bg-primary/10 p-3 rounded-lg">
                   <p className="text-sm text-primary font-medium">Project: {testimonial.project}</p>
