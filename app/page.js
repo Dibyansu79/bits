@@ -174,8 +174,8 @@ export default function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.slice(0, 6).map((service) => (
-              <Link key={service.id} href={`/services/${service.slug}`} className="block">
-                <div className="bg-card p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow border border-border h-full">
+              <Link key={service.id} href={`/services/${service.slug}`} className="block group">
+                <div className="bg-card p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-border h-full group-hover:border-primary/30 group-hover:scale-105">
                   <div className="text-4xl mb-4">{service.icon}</div>
                   <h3 className="text-xl font-semibold text-foreground mb-3">{service.title}</h3>
                   <p className="text-muted-foreground mb-4">{service.description}</p>
