@@ -8,87 +8,99 @@ export default function Home() {
   const services = [
     {
       id: 1,
-      title: "Web Development",
-      description: "Custom websites and web applications built with modern technologies",
-      icon: "🌐",
-      features: ["React/Next.js", "Node.js", "Full-stack Development"]
+      title: "Social Media Promotions",
+      description: "Targeted campaigns with bulk SMS and creative graphics to grow your reach",
+      icon: "📣",
+      features: ["Bulk SMS", "Graphics Design", "Campaign Strategy"],
+      slug: "social-media-promotions"
     },
     {
       id: 2,
-      title: "Mobile App Development",
-      description: "Native and cross-platform mobile applications for iOS and Android",
-      icon: "📱",
-      features: ["React Native", "Flutter", "Native iOS/Android"]
+      title: "MIA/ERP Management",
+      description: "Streamline processes with MIS dashboards and ERP implementation",
+      icon: "📊",
+      features: ["Implementation", "Integration", "Reporting"],
+      slug: "mia-erp-management"
     },
     {
       id: 3,
-      title: "Cloud Solutions",
-      description: "Scalable cloud infrastructure and migration services",
-      icon: "☁️",
-      features: ["AWS", "Azure", "Google Cloud"]
+      title: "Website Development",
+      description: "Custom websites and web apps built with modern technologies",
+      icon: "🌐",
+      features: ["React/Next.js", "Node.js", "Full-stack"],
+      slug: "web-development"
     },
     {
       id: 4,
-      title: "API Development",
-      description: "RESTful and GraphQL APIs for seamless integration",
-      icon: "🔌",
-      features: ["REST APIs", "GraphQL", "Microservices"]
+      title: "E-Contents",
+      description: "Engaging eLearning and marketing content for your brand",
+      icon: "✍️",
+      features: ["eLearning", "Copywriting", "Multimedia"],
+      slug: "e-contents"
     },
     {
       id: 5,
-      title: "Database Design",
-      description: "Optimized database architecture and management",
-      icon: "🗄️",
-      features: ["SQL", "NoSQL", "Database Optimization"]
+      title: "Skill Development Consultant",
+      description: "Consultancy to upskill teams with tailored learning paths",
+      icon: "🧠",
+      features: ["Tracks", "Workshops", "Assessments"],
+      slug: "skill-development-consultant"
     },
     {
       id: 6,
-      title: "DevOps & CI/CD",
-      description: "Automated deployment and infrastructure management",
-      icon: "⚙️",
-      features: ["Docker", "Kubernetes", "Jenkins"]
+      title: "Company Registration & Certifications",
+      description: "Assistance with GST, Trust/NGO, ISO, PF, ESI, GEMS, ITER and more",
+      icon: "📝",
+      features: ["GST", "NGO/Trust", "ISO"],
+      slug: "company-registration-and-certifications"
     },
     {
       id: 7,
-      title: "UI/UX Design",
-      description: "User-centered design with modern interfaces",
-      icon: "🎨",
-      features: ["Figma", "Adobe XD", "Prototyping"]
+      title: "BPO - Call Centre",
+      description: "Inbound/outbound support, lead gen, and back-office operations",
+      icon: "🎧",
+      features: ["Customer Support", "Leads", "24/7"],
+      slug: "bpo-call-centre"
     },
     {
       id: 8,
-      title: "E-commerce Solutions",
-      description: "Complete online store development and management",
-      icon: "🛒",
-      features: ["Shopify", "WooCommerce", "Custom Platforms"]
+      title: "Banking and Financial Centre",
+      description: "BFSI solutions for KYC/AML, operations, and analytics",
+      icon: "🏦",
+      features: ["KYC/AML", "Outsourcing", "Analytics"],
+      slug: "banking-and-financial-centre"
     },
     {
       id: 9,
-      title: "AI & Machine Learning",
-      description: "Intelligent solutions powered by artificial intelligence",
-      icon: "🤖",
-      features: ["Python", "TensorFlow", "Data Analytics"]
+      title: "Industry Readiness Program & Corporate Training",
+      description: "Bootcamps and soft-skill programs to make teams job-ready",
+      icon: "🎓",
+      features: ["Bootcamps", "Soft Skills", "Assessments"],
+      slug: "industry-readiness-and-corporate-training"
     },
     {
       id: 10,
-      title: "Cybersecurity",
-      description: "Security audits and protection for your applications",
-      icon: "🔒",
-      features: ["Penetration Testing", "Security Audits", "Compliance"]
+      title: "Software Development",
+      description: "Bespoke software across web, mobile, and cloud",
+      icon: "💻",
+      features: ["Product", "APIs", "Cloud"],
+      slug: "software-development"
     },
     {
       id: 11,
-      title: "Legacy System Modernization",
-      description: "Transform outdated systems into modern solutions",
-      icon: "🔄",
-      features: ["System Migration", "Code Refactoring", "Performance Optimization"]
+      title: "EDP (Entrepreneurship Development Training)",
+      description: "Entrepreneurship fundamentals, finance, and GTM execution",
+      icon: "🚀",
+      features: ["Business Basics", "Finance", "GTM"],
+      slug: "edp-entrepreneurship-development-training"
     },
     {
       id: 12,
-      title: "Technical Consulting",
-      description: "Expert guidance for technology decisions and strategy",
-      icon: "💡",
-      features: ["Architecture Review", "Technology Selection", "Best Practices"]
+      title: "IT Support and Consultancy",
+      description: "Proactive IT support, infrastructure, and security advisory",
+      icon: "🛠️",
+      features: ["Helpdesk", "Infrastructure", "Security"],
+      slug: "it-support-and-consultancy"
     }
   ];
 
@@ -162,7 +174,7 @@ export default function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.slice(0, 6).map((service) => (
-              <Link key={service.id} href={`/services/${service.title.toLowerCase().replace(/\s+/g, '-')}`} className="block">
+              <Link key={service.id} href={`/services/${service.slug}`} className="block">
                 <div className="bg-card p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow border border-border h-full">
                   <div className="text-4xl mb-4">{service.icon}</div>
                   <h3 className="text-xl font-semibold text-foreground mb-3">{service.title}</h3>

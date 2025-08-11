@@ -15,99 +15,99 @@ export default function Services() {
   const services = [
     {
       id: 1,
-      title: "Web Development",
-      description: "Custom websites and web applications built with modern technologies",
+      title: "Social Media Promotions",
+      description: "Grow your reach with targeted campaigns, bulk SMS and compelling graphics.",
+      icon: "📣",
+      features: ["Bulk SMS", "Graphics Design", "Campaign Strategy"],
+      slug: "social-media-promotions"
+    },
+    {
+      id: 2,
+      title: "MIA/ERP Management",
+      description: "Streamline operations with Management Information Analysis and ERP solutions.",
+      icon: "📊",
+      features: ["Process Automation", "Reporting", "Integration"],
+      slug: "mia-erp-management"
+    },
+    {
+      id: 3,
+      title: "Website Development",
+      description: "Custom websites and web applications built with modern technologies.",
       icon: "🌐",
       features: ["React/Next.js", "Node.js", "Full-stack Development"],
       slug: "web-development"
     },
     {
-      id: 2,
-      title: "Mobile App Development",
-      description: "Native and cross-platform mobile applications for iOS and Android",
-      icon: "📱",
-      features: ["React Native", "Flutter", "Native iOS/Android"],
-      slug: "mobile-app-development"
-    },
-    {
-      id: 3,
-      title: "Cloud Solutions",
-      description: "Scalable cloud infrastructure and migration services",
-      icon: "☁️",
-      features: ["AWS", "Azure", "Google Cloud"],
-      slug: "cloud-solutions"
-    },
-    {
       id: 4,
-      title: "API Development",
-      description: "RESTful and GraphQL APIs for seamless integration",
-      icon: "🔌",
-      features: ["REST APIs", "GraphQL", "Microservices"],
-      slug: "api-development"
+      title: "E-Contents",
+      description: "Engaging electronic content for learning, marketing, and internal use.",
+      icon: "✍️",
+      features: ["Copywriting", "eLearning", "Multimedia"],
+      slug: "e-contents"
     },
     {
       id: 5,
-      title: "Database Design",
-      description: "Optimized database architecture and management",
-      icon: "🗄️",
-      features: ["SQL", "NoSQL", "Database Optimization"],
-      slug: "database-design"
+      title: "Skill Development Consultant",
+      description: "Consultancy to build capabilities and upskill your workforce.",
+      icon: "🧠",
+      features: ["Training Roadmaps", "Assessments", "Workshops"],
+      slug: "skill-development-consultant"
     },
     {
       id: 6,
-      title: "DevOps & CI/CD",
-      description: "Automated deployment and infrastructure management",
-      icon: "⚙️",
-      features: ["Docker", "Kubernetes", "Jenkins"],
-      slug: "devops-cicd"
+      title: "Company Registration & Certifications",
+      description: "End-to-end support for registrations and statutory certifications.",
+      icon: "📝",
+      features: ["GST", "Trust/NGO", "ISO, PF, ESI, GEMS, ITER"],
+      slug: "company-registration-and-certifications"
     },
     {
       id: 7,
-      title: "UI/UX Design",
-      description: "User-centered design with modern interfaces",
-      icon: "🎨",
-      features: ["Figma", "Adobe XD", "Prototyping"],
-      slug: "ui-ux-design"
+      title: "BPO - Call Centre",
+      description: "Inbound and outbound call center services to support your customers.",
+      icon: "🎧",
+      features: ["Customer Support", "Lead Generation", "24/7 Operations"],
+      slug: "bpo-call-centre"
     },
     {
       id: 8,
-      title: "E-commerce Solutions",
-      description: "Complete online store development and management",
-      icon: "🛒",
-      features: ["Shopify", "WooCommerce", "Custom Platforms"],
-      slug: "e-commerce-solutions"
+      title: "Banking and Financial Centre",
+      description: "Solutions for banking processes, compliance, and analytics.",
+      icon: "🏦",
+      features: ["KYC/AML", "Process Outsourcing", "Financial Analytics"],
+      slug: "banking-and-financial-centre"
     },
     {
       id: 9,
-      title: "AI & Machine Learning",
-      description: "Intelligent solutions powered by artificial intelligence",
-      icon: "🤖",
-      features: ["Python", "TensorFlow", "Data Analytics"],
-      slug: "ai-machine-learning"
+      title: "Industry Readiness Program & Corporate Training",
+      description: "Programs to prepare talent for industry needs and upskill teams.",
+      icon: "🎓",
+      features: ["Bootcamps", "Soft Skills", "Tech Upskilling"],
+      slug: "industry-readiness-and-corporate-training"
     },
     {
       id: 10,
-      title: "Cybersecurity",
-      description: "Security audits and protection for your applications",
-      icon: "🔒",
-      features: ["Penetration Testing", "Security Audits", "Compliance"],
-      slug: "cybersecurity"
+      title: "Software Development",
+      description: "Bespoke software solutions across web, mobile, and cloud.",
+      icon: "💻",
+      features: ["Product Development", "APIs", "Integrations"],
+      slug: "software-development"
     },
     {
       id: 11,
-      title: "Legacy System Modernization",
-      description: "Transform outdated systems into modern solutions",
-      icon: "🔄",
-      features: ["System Migration", "Code Refactoring", "Performance Optimization"],
-      slug: "legacy-system-modernization"
+      title: "EDP (Entrepreneurship Development Training)",
+      description: "Training programs designed to develop entrepreneurial mindset and skills.",
+      icon: "🚀",
+      features: ["Business Basics", "Mentoring", "Go-to-Market"],
+      slug: "edp-entrepreneurship-development-training"
     },
     {
       id: 12,
-      title: "Technical Consulting",
-      description: "Expert guidance for technology decisions and strategy",
-      icon: "💡",
-      features: ["Architecture Review", "Technology Selection", "Best Practices"],
-      slug: "technical-consulting"
+      title: "IT Support and Consultancy",
+      description: "Comprehensive IT support, maintenance, and strategic consulting.",
+      icon: "🛠️",
+      features: ["Helpdesk", "Infrastructure", "Security"],
+      slug: "it-support-and-consultancy"
     }
   ];
 
